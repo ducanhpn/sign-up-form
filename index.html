@@ -3,15 +3,52 @@
     <head>
         <title>Sign Up Form</title>
         <meta charset="utf-8">
+        <link href="style.css" type="text/css" rel="stylesheet" />
     </head>
     <body>
 
-        <div>
-
+        <div class="left">
+            <img src="./background.jpg" alt="this is background" id="background"/>
+            <div class="logo">
+                <img src="./logo.png" alt = "this is logo"/>
+            </div>
+            
         </div>
         
-        <div>
-
+        <div class="right">
+        
+            <p>This is not real online service! You know you need something like this in yourlife to help you realize your deepest dreams. Sign up now to get start. <br/><br/>
+                You know you want to.</p>
+            <form action="" methode="post">
+                <fieldset>
+                    <legend>Let's do this</legend>
+                    <div>
+                        <label for="first-name">FIRST NAME</label>
+                        <input type="text" id="first-name" name="first-name">
+                    </div>
+                    <div>
+                        <label for="last-name">LAST NAME</label>
+                        <input type="text" id="last-name" name="last-name">
+                    </div>
+                    <div>
+                        <label for="email">EMAIL</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    <div>
+                        <label for="phone-number">PHONE NUMBER</label>
+                        <input type="tel" id="phone-number" name="phone-number">
+                    </div>
+                    <div>
+                        <label for="password">PASSWORD</label>
+                        <input type="password" id="password" name="password">
+                    </div>
+                    <div>
+                        <label for="confirm-password">CONFIRM PASSWORD</label>
+                        <input type="password" id="confirm-password" name="confirm-password">
+                    </div>
+                    
+                </fieldset>
+            </form>
         </div>
 
     </body>

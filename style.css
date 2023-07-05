@@ -10,11 +10,11 @@ body {
 }
 
 .left {
-    flex:1;
+    flex:1.5;
     position: relative;
 }
 .right {
-    flex: 1;
+    flex: 2;
 }
 
 .left img#background {
@@ -25,10 +25,16 @@ body {
 .left .logo {
     position: absolute;
     left: 0;
-    top: 40px;
+    top: 180px;
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: stretch;
+    opacity: 0.6;
+}
+
+.left .logo>img{
+    width: 100%;
+    height: 180px;
 }
 
 .left .credit {
@@ -49,6 +55,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-bottom: 1px solid #e0e0e0;
+    box-shadow: 0 10px #e0e0e0;
     
     
 }
@@ -95,24 +103,55 @@ body {
 }
 
 input {
-    font-size: 24px;
+    appearance: none !important;
+    padding: 2px 4px;
+    font-size: 18px;
+    border: 1px solid #E5E7EB;
     border-radius: 12px;
-    border-color: #E5E7EB;
+}
+
+input:focus{
+    outline: none;
+    border: 1px solid blue;
+    box-shadow: 1px 1px;
+}
+
+button {
+    border-radius: 12px;
+    border: none;
+    font-weight: bold;
+    font-size: 18px;
+    height: 3rem;
+    color: white;
+    background-color: #264052;
 }
 
 
 .right .lower{
     flex:1;
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
+    margin-top: 1px;
+    background-color: #f0f2f5;
+
 }
 
 .right .lower>.question {
-    width: 700px;
-    font-size: 18px;
-    margin-top: 8px;
+    margin-left: 24px;
+    font-size: 24px;
+    margin-top: 24px;
 }
 
+.question>a {
+    text-decoration: none;
+    color: #264052;
+    font-weight: bold;
+}
+
+.error {
+    border-color: red;
+}
+.error1::after {
+    content: "* Password do not match";
+    color: red;
+}
 
 
